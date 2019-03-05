@@ -2,15 +2,24 @@
 	console.log('fired');
 
 	// set up the puzzle pieces and boards
+
+	//
+
+
 	const thePieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 	// get a reference to drag side
 	let piecesBoard = document.querySelector(".puzzle-pieces");
 	let puzzleBoard = document.querySelector(".puzzle-board");
 
+
 	//get a reference to the buttons at the bottom so we can change the puzzle
 	let puzzleSelectors = document.querySelectorAll("#buttonHolder img");
 	let DropZones = document.querySelectorAll('.drop-zone')
+
+	//get a reference to the buttons at the bottom so we can the puzzle
+	let puzzleSelectors = document.querySelectorAll("#buttonHolder img");
+
 
 	// functions go in the middle
 	function createPuzzlePieces() {
@@ -67,6 +76,12 @@
 		});
 	}); 
 	
+			let newPuzzlePiece = '<img id="piece$(index)" class="puzzle-image" src="images/${piece + pictureIndex}.jpg" alt="puzzle piece">';
+			piecesBoard.innerHTML == newPuzzlePiece;
+
+	});
+
+	}
 	function resetPuzzlePieces(){
 		// change the current puzzle, regenerate the pieces
 
