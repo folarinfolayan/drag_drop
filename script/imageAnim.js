@@ -22,7 +22,7 @@
 
 
 	// functions go in the middle
-	function createPuzzlePieces() {
+	function createPuzzlePieces(pictureIndex) {
 		// generate images here -> need to make 4 (top left, right, bottom left, right)
 		//debugger;
 		// loop through the images refs and generate one for each
@@ -81,7 +81,7 @@
 
 	});
 
-	}
+	});
 	function resetPuzzlePieces(){
 		// change the current puzzle, regenerate the pieces
 
