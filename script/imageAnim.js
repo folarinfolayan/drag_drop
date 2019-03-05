@@ -32,15 +32,19 @@
 		piecesBoard.innerHTML = "";
 
 		//generate new pieces
-		createPuzzlePieces()
-		debugger;
+		createPuzzlePieces(this.DataGroup.Puzzleref);
+		//debugger;
+		var images = document.getElementByClassName('puzzle-image')
+			while(images.path > 4){
+				images[4].parentNode.removeChild(images[4]);
+			}
 	}
 
 	// event handling goes here
 
 	puzzleSelectors.forEach(button => button.addEventListener("click", resetPuzzlePieces));
 
-	// call this function to set uo / generate the pieces on load
-	createPuzzlePieces();
+	// call this function to set up / generate the pieces on load
+	//createPuzzlePieces();
 
 })();
